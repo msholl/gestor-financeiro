@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 Route::get('/lancamentos',[LancamentosController::class, 'index']);
 Route::get('/novo-lancamento',[LancamentosController::class, 'create']);
+//Route::post('/lancamentos/salvar', LancamentosController::class, 'store');
 
 Auth::routes();
 
