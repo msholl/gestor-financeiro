@@ -36,7 +36,9 @@ class LancamentosController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nomeLancamento = $request->input('nome-lancamento');
+        $descricaoLancamento = $request->input('descricao');
+        $valorLancamento = $request->input('valor');
     }
 
     /**
