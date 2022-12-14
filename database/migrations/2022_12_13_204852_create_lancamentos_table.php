@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nome', 128);
             $table->string('descricao', 256);
             $table->float('valor');
-            $table->boolean('pago');
+            $table->boolean('pago')->default(0);
             $table->timestamps();
         });
     }
